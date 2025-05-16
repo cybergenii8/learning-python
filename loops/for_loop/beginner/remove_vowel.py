@@ -13,7 +13,7 @@ vowel = "aiueoAIUEO"
 
 # Use for loop to remove vowel
 for char in user_string:
-    if not char in vowel:
+    if char not in vowel:
         removed_vowel += char
 
 print(f"{user_string} after the vowel is removed: {removed_vowel}")
