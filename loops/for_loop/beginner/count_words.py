@@ -6,7 +6,9 @@
 user_sentence = input("Enter a sentence: ")
 
 # Initialize a variable to store word counts
-word_count = 1  # set 1 to default
+# use strip to remove any leading and trailing whitespace
+# when the user enters an empty string the result is 0 not 1
+word_count = 1 if user_sentence.strip() else 0
 
 # Use a for loop to count each word
 for char in user_sentence:
