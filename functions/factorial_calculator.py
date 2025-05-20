@@ -2,14 +2,23 @@
 
 # Task: Write a function factorial(n) that calculates the factorial of a number using while loop
 
+
 def factorial(n):
-    counter = 1
+    """Return factorial from n
+
+    Args:
+        n (_int_)
+    """
+
+    # Initialize a variable to store the factorial result
     factorial = 1
 
-    while counter <= n:
-        factorial *= counter
-        counter += 1
-    
-    print(f"Factorial number of {n} is {factorial}")
+    # Use while loop to get the numbers
+    while n > 1:
+        factorial *= n
+        n -= 1
 
-factorial(5)
+    return factorial
+
+
+print(factorial(10))
